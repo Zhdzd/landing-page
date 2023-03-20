@@ -4,9 +4,24 @@
     box-sizing: border-box;
     
 }
+.footer-container{
+    display:flex;
+    background-color: #a39274;
+    padding:20px 10px;
+    justify-content: center;
+}
+.footer{
+    display:flex;
+    
+}
+.copyright{
+    color:#252523;
+    display: flex;
+    
+}
 .header-container {
     display: flex;
-    background-color: #1F2937;
+    background-color:#a39274;
    
     padding:20px 10px;
     justify-content:center;
@@ -14,25 +29,26 @@
 }
 .header{
     display:flex;
-    width:920px;
+    width:1240px;
 }
 .logo{
-    
-    font-size:24px;
-    color:#F9FAF8;
+    font-size:30px;
+    color:#252523;
     font-weight: bold;
     
 }
 .links{
     display:flex;
     margin-left:auto;
-    font-size:18px;
-    color:#E5E7EB;
+    font-size:20px;
+    color:black;
+    font-weight: bold;
 }
 .logo,
 .link-one,
 .link-two,
-.link-three{
+.link-three,
+.link-four{
     /* padding-left:0px; */
     margin:20px;
 }
@@ -40,18 +56,18 @@ a{
     text-decoration: none;
 }
 a:visited{
-    color:#E5E7EB;
+    color:#252523;
 }
 .main-container {
     display:flex;
     justify-content: center;
     padding:50px 0;
-    background-color:  #1F2937;
+    background-color:  #a39274;
     /* border:1px solid white; */
 }
 .main{
     display:flex;
-    width: 900px;
+    width: 1200px;
     /* border:1px solid white; */
 }
 .left-main{
@@ -64,21 +80,36 @@ a:visited{
 .text-large{
     font-size:48px;
     font-weight: bolder;
-    color:#F9FAF8;
+    color:#252523;
     
 }
 .text-small{
-    font-size:18px;
-    color:#E5E7EB;
-    width:400px
+    font-size:20px;
+    color:#252523;
+    width:400px;
+    
     
 }
 .right-main{
     display:flex;
     flex:1;
+    /* background-color: #E5E7EB; */
+    /* border:5px solid #3882F6; */
+    width:300px;
+    height:250px;
+    overflow: hidden;
+    justify-content: center;
+
+}
+.right-main img{
+    width: 100%;
+    height:100%;
+    object-fit:contain;
+    border-radius: 10px;
+    
 }
 .sign-up-btn-main{
-    background-color:#3882F6;
+    background-color:#252523;
     color:#F9FAF8;
     display:flex;
     border-radius:6px;
@@ -87,11 +118,121 @@ a:visited{
     align-items: center;
     border: none;
     line-height: 22px;
-    margin-top: 15px;;
+    margin-top: 15px;
 }
 
 
-.info-container .info .img{
-    border:blue;
+.info-container {
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    
+    
+}
+.info-title {
+    display:flex;
+    justify-content: center;
+    margin:30px;
+    font-size: 36px;
+    font-weight:bolder;
+    color:#252523;
+}
+.info-content{
+    display:flex;
+    justify-content:space-between;
+    /* border:5px solid red; */
+    padding:15px 0;
+}
+
+
+.info-content .img,.img-first, .img-last{
+    width:300px;
+    height: 200px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    overflow:hidden;
+    border-radius: 10px;
+    border:5px solid #a39274;
+}
+.info-content img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.img-first{
+    margin-left: 50px;
+}
+.img-last{
+    margin-right: 50px;
+}
+.quote-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfd8c8;
+    padding:80px
+}
+.quote{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    font-size:36px;
+    color: #252523;
+}
+.author{
+    display: flex;
+    font-size:36px;
+    justify-content: flex-end;
+    width: 800px;
+}
+.call-to-action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-to-action{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-to-action-container .cta-btn {
+    /* border:5px solid red; */
+}
+.call-to-action-container {
+    /* border:5px solid red; */
+}
+.call-to-action{
+    /* border:5px solid red; */
+    background-color: #dfd8c8;
+    border-radius:10px;
+    width:900px;
+    padding:20px 0;
+    margin:30px 20px;
+    
+}
+.cta-text{
+    /* border:5px solid red; */
+    color:#252523;
+}
+.sign-up-btn-cta{
+    background-color: #252523;
+    color:#F9FAF8;
+    border-radius: 6px;
+    padding:5px 30px;
+    border-color: #F9FAF8;
+    margin-left:100px;
+  
+
+    /* color:#F9FAF8;
+    display:flex;
+    border-radius:6px;
+    padding:5px 30px;
+    font-size:15px;
+    align-items: center;
+    border: none;
+    line-height: 22px;
+    margin-top: 15px;*/
 }
 
